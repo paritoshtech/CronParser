@@ -7,7 +7,7 @@ public class StatementFactoryTest {
         System.out.println("Starting Parser " + Arrays.toString(argv));
 
         try {
-            Statement statement = StatementFactory.getStatementFromArg("*/15 0 1,15 * 1-5 /home/user");
+            Statement statement = StatementFactory.getStatementFromArg("1-5 0 1,15 * 1-5 /home/user");
             statement.print();
 
         } catch (IOException e) {
