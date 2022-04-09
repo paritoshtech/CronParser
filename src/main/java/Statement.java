@@ -1,6 +1,8 @@
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.IOException;
+
 @Getter
 @Setter
 public class Statement implements Printable{
@@ -9,7 +11,7 @@ public class Statement implements Printable{
 
 
     @Override
-    public void print() {
+    public void print() throws IOException {
         cronExpression.print();
         command.print();
     }

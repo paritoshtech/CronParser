@@ -1,6 +1,8 @@
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.IOException;
+
 @Getter
 @Setter
 public class CronExpression  implements Printable{
@@ -11,7 +13,7 @@ public class CronExpression  implements Printable{
     DayOfWeek dayOfWeek;
 
     @Override
-    public void print() {
+    public void print() throws IOException {
         minute.print();
         hour.print();
         dayOfMonth.print();
